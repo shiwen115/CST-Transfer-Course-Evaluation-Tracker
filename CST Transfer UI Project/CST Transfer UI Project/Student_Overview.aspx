@@ -13,7 +13,7 @@
     </div>
 
     <div id="mainContent">
-        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+        <asp:GridView ID="gvStudentTickets" runat="server"></asp:GridView>
     </div>
 
 </asp:Content>
