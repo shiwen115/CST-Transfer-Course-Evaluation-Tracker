@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CST_Transfer_UI_Project
 {
-    public class Ticket
+    public class StudentTicket
     {
         public int TicketID { get; set; }
         public String Status { get; set; }

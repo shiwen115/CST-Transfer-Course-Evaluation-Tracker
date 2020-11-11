@@ -68,11 +68,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\Student_Overview.css" />
+    <Content Include="Faculty_Overview.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="Student_Overview.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Faculty_Overview.aspx.cs">
+      <DependentUpon>Faculty_Overview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty_Overview.aspx.designer.cs">
+      <DependentUpon>Faculty_Overview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
