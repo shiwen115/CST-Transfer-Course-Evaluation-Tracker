@@ -10,9 +10,11 @@ namespace CST_Transfer_UI_Project
 {
     public partial class Student_Overview : System.Web.UI.Page
     {
+        ArrayList array = new ArrayList();
+        ArrayList filteredArray = new ArrayList();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            ArrayList array = new ArrayList();
 
             StudentTicket t1 = new StudentTicket();
             t1.TicketID = 12356;
@@ -37,6 +39,30 @@ namespace CST_Transfer_UI_Project
 
             gvStudentTickets.DataSource = array;
             gvStudentTickets.DataBind();
+        }
+
+        protected void Status_Changed(object sender, EventArgs e)
+        {
+            string status = statusFilter.SelectedValue;
+
+            if(!(status == "all"))
+            {
+                for (int i = 0; i < array.Count; i++)
+                {
+                    StudentTicket ticket = (StudentTicket)array[i];
+                    if (ticket.Status == status)
+                    {
+                        filteredArray.Add(ticket);
+                    }
+                }
+                gvStudentTickets.DataSource = filteredArray;
+                gvStudentTickets.DataBind();
+            }
+            else
+            {
+                gvStudentTickets.DataSource = array;
+                gvStudentTickets.DataBind();
+            } 
         }
     }
 }

@@ -6,14 +6,27 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div id="header">
+    <div id="header" style="margin-top:-8px;">
         <div class="alert" role="alert">
              Ticket Dashboard
         </div>
     </div>
 
     <div id="mainContent">
-        <asp:GridView ID="gvStudentTickets" runat="server" AutoGenerateColumns="False">
+
+        <!--Drop Down Filter-->
+        <asp:DropDownList id="statusFilter" AutoPostBack="true" OnSelectedIndexChanged="Status_Changed" runat="server" style="margin-left: 26%; margin-top: 8em;">
+
+                  <asp:ListItem Selected="true" Value="all"> All </asp:ListItem>
+                  <asp:ListItem Value="Uploading"> Uploading </asp:ListItem>
+                  <asp:ListItem Value="Unclaimed"> Unclaimed </asp:ListItem>
+                  <asp:ListItem Value="Evaluating"> Evaluating </asp:ListItem>
+                  <asp:ListItem Value="Complete"> Complete </asp:ListItem>
+
+               </asp:DropDownList>
+
+        <!--Gridview-->
+        <asp:GridView ID="gvStudentTickets" runat="server" AutoGenerateColumns="False" style="margin-left: auto; margin-right: auto; margin-top:5em;" CellPadding="12">
             <Columns>
                 <asp:BoundField DataField="Status" HeaderText="Status" />
                 <asp:BoundField DataField="DateCreated" HeaderText="Date Created" />
