@@ -15,7 +15,7 @@
     <div id="mainContent">
 
         <!--Drop Down Filter-->
-        <asp:DropDownList id="statusFilter" AutoPostBack="true" OnSelectedIndexChanged="Status_Changed" runat="server" style="margin-left: 26%; margin-top: 8em;">
+        <asp:DropDownList id="statusFilter" AutoPostBack="true" OnSelectedIndexChanged="Status_Changed" runat="server" style="margin-left: 26%; margin-top: 5em;">
 
                   <asp:ListItem Selected="true" Value="all"> All </asp:ListItem>
                   <asp:ListItem Value="Uploading"> Uploading </asp:ListItem>
@@ -26,7 +26,7 @@
                </asp:DropDownList>
 
         <!--Gridview-->
-        <asp:GridView ID="gvStudentTickets" runat="server" AutoGenerateColumns="False" style="margin-left: auto; margin-right: auto; margin-top:5em;" CellPadding="12">
+        <asp:GridView ID="gvStudentTickets" runat="server" AutoGenerateColumns="False" style="margin-left: auto; margin-right: auto; margin-top:5em;" CellPadding="15">
             <Columns>
                 <asp:BoundField DataField="Status" HeaderText="Status" />
                 <asp:BoundField DataField="DateCreated" HeaderText="Date Created" />
