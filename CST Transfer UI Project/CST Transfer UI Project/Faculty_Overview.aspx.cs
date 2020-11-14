@@ -104,5 +104,55 @@ namespace CST_Transfer_UI_Project
                 gvStudentTickets.DataBind();
             }
         }
+
+        protected void btnSearch_Clicked(object sender, EventArgs e)
+        {
+            // Get Entered TUID
+            int TUID = 0;
+            bool success = Int32.TryParse(txtSearch.Text, out TUID);
+
+            //Check if search box is empty and display all tickets
+            if (txtSearch.Text == "")
+            {
+                gvStudentTickets.DataSource = array;
+                gvStudentTickets.DataBind();
+            }
+
+            //Check for entered TUID and display those tickets
+            for (int i = 0; i < array.Count; i++)
+            {
+                FA_Ticket ticket = (FA_Ticket)array[i];
+                if (ticket.TUID == TUID)
+                {
+                    filteredArray.Add(ticket);
+                }
+            }
+            gvStudentTickets.DataSource = filteredArray;
+            gvStudentTickets.DataBind();
+        }
+
+        protected void Dep_Changed(object sender, EventArgs e)
+        {
+            string dep = ddlDepartment.SelectedValue;
+
+            if (!(dep == "all"))
+            {
+                for (int i = 0; i < array.Count; i++)
+                {
+                    FA_Ticket ticket = (FA_Ticket)array[i];
+                    if (ticket.Department == dep)
+                    {
+                        filteredArray.Add(ticket);
+                    }
+                }
+                gvStudentTickets.DataSource = filteredArray;
+                gvStudentTickets.DataBind();
+            }
+            else
+            {
+                gvStudentTickets.DataSource = array;
+                gvStudentTickets.DataBind();
+            }
+        }
     }
 }
