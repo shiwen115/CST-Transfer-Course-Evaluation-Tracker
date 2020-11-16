@@ -81,6 +81,7 @@
     <Compile Include="Faculty_Overview.aspx.designer.cs">
       <DependentUpon>Faculty_Overview.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FA_Ticket.cs" />
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,7 +104,7 @@
     <Compile Include="Student_Overview.aspx.designer.cs">
       <DependentUpon>Student_Overview.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Ticket.cs" />
+    <Compile Include="StudentTicket.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master_Page.Master" />

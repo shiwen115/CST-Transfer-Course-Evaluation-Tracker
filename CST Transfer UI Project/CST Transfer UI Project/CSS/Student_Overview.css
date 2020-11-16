@@ -4,3 +4,10 @@
 .alert {
     background-color: #F1E7E7;
 }
+
+#statusFilter {
+    margin-left: 20%;
+    margin-top: auto;
+    color: red;
+}
+

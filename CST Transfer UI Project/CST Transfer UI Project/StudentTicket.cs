@@ -9,7 +9,7 @@ namespace CST_Transfer_UI_Project
     {
         public int TicketID { get; set; }
         public String Status { get; set; }
-        public DateTime DateCreated { get; set; }
+        public String DateCreated { get; set; }
         public String TransferCourse { get; set; }
         public String StudentName { get; set; }
         public String TransferUniversity { get; set; }

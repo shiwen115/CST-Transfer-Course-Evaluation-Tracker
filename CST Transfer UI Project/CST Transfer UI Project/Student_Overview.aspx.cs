@@ -10,14 +10,16 @@ namespace CST_Transfer_UI_Project
 {
     public partial class Student_Overview : System.Web.UI.Page
     {
+        ArrayList array = new ArrayList();
+        ArrayList filteredArray = new ArrayList();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            ArrayList array = new ArrayList();
 
             StudentTicket t1 = new StudentTicket();
             t1.TicketID = 12356;
             t1.Status = "Complete";
-            t1.DateCreated = new DateTime(2020, 08, 20);
+            t1.DateCreated = "20-08-2020";
             t1.TransferCourse = "BIO-630";
             t1.StudentName = "John Doe";
             t1.TransferUniversity = "Penn State University";
@@ -27,7 +29,7 @@ namespace CST_Transfer_UI_Project
             StudentTicket t2 = new StudentTicket();
             t2.TicketID = 654321;
             t2.Status = "Uploading";
-            t2.DateCreated = new DateTime(2020, 10, 05);
+            t2.DateCreated = "10-05-2020";
             t2.TransferCourse = "CHEM-204";
             t2.StudentName = "John Doe";
             t2.TransferUniversity = "Penn State University";
@@ -37,6 +39,30 @@ namespace CST_Transfer_UI_Project
 
             gvStudentTickets.DataSource = array;
             gvStudentTickets.DataBind();
+        }
+
+        protected void Status_Changed(object sender, EventArgs e)
+        {
+            string status = statusFilter.SelectedValue;
+
+            if(!(status == "all"))
+            {
+                for (int i = 0; i < array.Count; i++)
+                {
+                    StudentTicket ticket = (StudentTicket)array[i];
+                    if (ticket.Status == status)
+                    {
+                        filteredArray.Add(ticket);
+                    }
+                }
+                gvStudentTickets.DataSource = filteredArray;
+                gvStudentTickets.DataBind();
+            }
+            else
+            {
+                gvStudentTickets.DataSource = array;
+                gvStudentTickets.DataBind();
+            } 
         }
     }
 }
