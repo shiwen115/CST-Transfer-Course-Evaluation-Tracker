@@ -1,5 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master_Page.Master" AutoEventWireup="true" CodeBehind="Rules.aspx.cs" Inherits="CST_Transfer_UI_Project.Rules" %>
+﻿<%@ Page Title="Rules" Language="C#" MasterPageFile="~/Master_Page.Master" AutoEventWireup="true" CodeBehind="Rules.aspx.cs" Inherits="CST_Transfer_UI_Project.Rules" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -41,7 +44,7 @@
                     </div>
 
                     <div class="col text-left">
-                        <asp:Image ID="btnAdd" src="pics/PlusSquare.png" Style="width: 30px" runat="server" /> <br />
+                        <asp:Image ID="btnAdd" src="images/PlusSquare.png" Style="width: 30px" runat="server" /> <br />
                     </div>
                 </div>
 
@@ -55,7 +58,7 @@
                     </div>
 
                     <div class="col text-left">
-                        <asp:Image id="btnMinus" src="pics/MinusSquare.png" style="width: 30px" runat="server" />
+                        <asp:Image id="btnMinus" src="images/MinusSquare.png" style="width: 30px" runat="server" />
                     </div>
                 </div>
                 <!-- End BIO -->
@@ -72,7 +75,7 @@
                     </div>
 
                     <div class="col text-left">
-                        <img src="pics/PlusSquare.png" style="width: 30px" />
+                        <img src="images/PlusSquare.png" style="width: 30px" />
                     </div>
                 </div>
 
@@ -86,7 +89,7 @@
                     </div>
 
                     <div class="col text-left">
-                        <asp:Image id="Image1" src="pics/MinusSquare.png" style="width: 30px" runat="server" />
+                        <asp:Image id="Image1" src="images/MinusSquare.png" style="width: 30px" runat="server" />
                     </div>
                 </div>
 
@@ -100,7 +103,7 @@
                     </div>
 
                     <div class="col text-left">
-                        <asp:Image id="Image2" src="pics/MinusSquare.png" style="width: 30px" runat="server" />
+                        <asp:Image id="Image2" src="images/MinusSquare.png" style="width: 30px" runat="server" />
                     </div>
                 </div>
                 <!-- End CHEM -->
@@ -117,7 +120,7 @@
                     </div>
 
                     <div class="col text-left">
-                        <img src="pics/PlusSquare.png" style="width: 30px" />
+                        <img src="images/PlusSquare.png" style="width: 30px" />
                     </div>
                 </div>
                 <!-- End CST -->
@@ -134,7 +137,7 @@
                     </div>
 
                     <div class="col text-left">
-                        <img src="pics/PlusSquare.png" style="width: 30px" />
+                        <img src="images/PlusSquare.png" style="width: 30px" />
                     </div>
 
                 </div>
@@ -152,7 +155,7 @@
                     </div>
 
                     <div class="col text-left">
-                        <img src="pics/PlusSquare.png" style="width: 30px" />
+                        <img src="images/PlusSquare.png" style="width: 30px" />
                     </div>
                 </div>
                 <!-- End Math -->
@@ -169,7 +172,7 @@
                     </div>
 
                     <div class="col text-left">
-                        <img src="pics/PlusSquare.png" style="width: 30px" />
+                        <img src="images/PlusSquare.png" style="width: 30px" />
                     </div>
 
                 </div>
