@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master_Page.Master" AutoEventWireup="true" CodeBehind="Student_Ticket_Details.aspx.cs" Inherits="CST_Transfer_UI_Project.Student_Ticket_Details" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="Page_Name" runat="server">
+Ticket Details
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <link href="CSS/Student_Details.css" rel="stylesheet" />

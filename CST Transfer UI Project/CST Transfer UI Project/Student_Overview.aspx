@@ -4,6 +4,10 @@
     <link rel="stylesheet" href="CSS/Student_Overview.css" />
 </asp:Content>
 
+<asp:Content ID="Content3" ContentPlaceHolderID="Page_Name" runat="server">
+    Ticket Overview
+</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div id="mainContent">
@@ -185,5 +189,5 @@
             </div>
         </div>
     </div>
-
+        -->
 </asp:Content>

@@ -71,13 +71,13 @@
     <Content Include="CSS\Student_Details.css" />
     <Content Include="CSS\Student_Overview.css" />
     <Content Include="Faculty_Overview.aspx" />
-    <Content Include="HomePage.aspx" />
     <Content Include="images\Complete.jpg" />
     <Content Include="images\Evaluating.jpg" />
     <Content Include="images\T.jpg" />
     <Content Include="images\Temple_Icon.png" />
     <Content Include="images\Unclaimed.png" />
     <Content Include="images\Uploading.png" />
+    <Content Include="Login.aspx" />
     <Content Include="Rules.aspx" />
     <Content Include="Student_Overview.aspx" />
     <Content Include="Student_Ticket_Details.aspx" />
@@ -99,12 +99,12 @@
       <DependentUpon>Faculty_Overview.aspx</DependentUpon>
     </Compile>
     <Compile Include="FA_Ticket.cs" />
-    <Compile Include="HomePage.aspx.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomePage.aspx.designer.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master_Page.Master.cs">
       <DependentUpon>Master_Page.Master</DependentUpon>

@@ -4,9 +4,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 </asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="Page_Name" runat="server">
+Rules
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container text-center border border-dark px-0">
+
+            <div class="container text-center border border-dark px-0">
 
             <!-- Container Header -->
             <div class="col-xs-12 border border-dark h3 m-0">
@@ -14,11 +21,17 @@
             </div>
 
             <!-- Grace Period -->
-            <div class="col-xs-12 text-center m-5">
-                Student Grace Period: 
-                <asp:TextBox placeholder="10 Days" runat="server" />
-                <div class="d-inline bg-light border border-dark">
-                    DAYS
+
+            <div class="input-group justify-content-center my-5">
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style="background-color: #FFF4F4">Student Grace Period: </span>
+                </div>
+
+                <asp:TextBox placeholder="14" runat="server" />
+
+                <div class="input-group-append">
+                    <span class="input-group-text" style="background-color: #FFF4F4">DAYS </span>
                 </div>
             </div>
 
@@ -30,154 +43,283 @@
 
 
             <!-- FA Content -->
-            <div class="col-10 offset-1 text-center border border-dark" style="background-color: #FFF4F4">
+            <div class="col-10 offset-1 text-center border border-dark pb-3" style="background-color: #FFF4F4">
 
                 <!-- BIO FAs -->
-                <div class="row text-center m-3">
+                <div class="row text-center mt-3">
 
                     <div class="col-5 text-right">
                         Bio FA TUID: 
                     </div>
 
                     <div class="d-inline">
-                        <asp:TextBox ID="txt1" placeholder="TUID" runat="server"/> <br />
+                        <asp:TextBox ID="txtBio" placeholder="TUID" runat="server" />
+                        <br />
                     </div>
 
+                    <!-- Add Button -->
                     <div class="col text-left">
-                        <asp:Image ID="btnAdd" src="images/PlusSquare.png" Style="width: 30px" runat="server" /> <br />
+                        <asp:ImageButton ID="btnBioAdd" runat="server" ImageUrl="images/PlusSquare.png" Text="" Width="30px" OnClick="btnBioAdd_Click" />
+                        <br />
                     </div>
                 </div>
 
-                <!-- BIO FA 1 -->
-                <div class="row text-center m-3 ">
-                    
-                    <div class="col-6 text-right"></div>
+                <!-- Bio FA Repeater -->
+                <asp:Repeater ID="rptBio" runat="server">
+                    <ItemTemplate>
 
-                    <div class="d-inline">
-                            <asp:TextBox Text="Bio Advisor 1" runat="server" Style="background-color: darkgray" ReadOnly="True" /> <br />
-                    </div>
+                        <!-- Wrapper -->
+                        <div class="d-inline-flex justify-content-center offset-1 my-1">
 
-                    <div class="col text-left">
-                        <asp:Image id="btnMinus" src="images/MinusSquare.png" style="width: 30px" runat="server" />
-                    </div>
-                </div>
+                            <!-- Input Group -->
+                            <div class="input-group">
+
+
+                                <!-- FA TUID -->
+                                <asp:TextBox Text="<%# Container.DataItem.ToString() %>" Width="65%" runat="server" Style="background-color: darkgray" ReadOnly="True" />
+
+                                <!-- Remove Button -->
+                                <div class="input-group-append">
+                                    
+                                        <asp:ImageButton type="button" ID="btnBioMinus" runat="server" ImageUrl="images/MinusSquare.png" Text="" Width="30px"
+                                            CommandName="Bio"
+                                            CommandArgument="<%# Container.DataItem.ToString() %>" />
+
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+
+                    </ItemTemplate>
+                </asp:Repeater>
+                <!-- End Repeater -->
                 <!-- End BIO -->
 
                 <!-- CHEM FAs -->
-                <div class="row text-center m-3">
+                <div class="row text-center mt-4">
 
                     <div class="col-5 text-right">
                         Chemistry FA TUID: 
                     </div>
 
                     <div class="d-inline">
-                        <asp:TextBox placeholder="TUID" runat="server" />
+                        <asp:TextBox ID="txtChem" placeholder="TUID" runat="server" />
                     </div>
 
+                    <!-- Add Button -->
                     <div class="col text-left">
-                        <img src="images/PlusSquare.png" style="width: 30px" />
+                        <asp:ImageButton ID="btnChemAdd" runat="server" ImageUrl="images/PlusSquare.png" Text="" Width="30px" OnClick="btnChemAdd_Click" />
+                        <br />
                     </div>
                 </div>
 
-                <!-- CHEM FA 1 -->
-                <div class="row text-center m-3 ">
-                    
-                    <div class="col-6 text-right"></div>
 
-                    <div class="d-inline">
-                            <asp:TextBox Text="Chem Advisor 1" runat="server" Style="background-color: darkgray" ReadOnly="True" /> <br />
-                    </div>
+                <!-- Chem FA Repeater -->
+                <asp:Repeater ID="rptChem" ItemType="System.string" runat="server">
+                    <ItemTemplate>
 
-                    <div class="col text-left">
-                        <asp:Image id="Image1" src="images/MinusSquare.png" style="width: 30px" runat="server" />
-                    </div>
-                </div>
+                        <!-- Wrapper -->
+                        <div class="d-inline-flex justify-content-center offset-1 my-1">
 
-                <!-- CHEM FA 2 -->
-                <div class="row text-center m-3 ">
-                    
-                    <div class="col-6 text-right"></div>
+                            <!-- Input Group -->
+                            <div class="input-group">
 
-                    <div class="d-inline">
-                            <asp:TextBox Text="Chem Advisor 1" runat="server" Style="background-color: darkgray" ReadOnly="True" /> <br />
-                    </div>
+                                <!-- FA TUID -->
+                                <asp:TextBox Text="<%# Container.DataItem.ToString() %>" runat="server" Width="65%" Style="background-color: darkgray" ReadOnly="True" />
 
-                    <div class="col text-left">
-                        <asp:Image id="Image2" src="images/MinusSquare.png" style="width: 30px" runat="server" />
-                    </div>
-                </div>
+                                <!-- Remove Button -->
+                                <div class="input-group-append">
+                                    <asp:ImageButton ID="btnChemMinus" runat="server" ImageUrl="images/MinusSquare.png" Text="" Width="30px"
+                                        CommandName="Chem"
+                                        CommandArgument="<%# Container.DataItem.ToString() %>" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </ItemTemplate>
+                </asp:Repeater>
+                <!-- End Repeater -->
                 <!-- End CHEM -->
 
-                <!-- CST FAs -->
-                <div class="row text-center m-3">
+                <!-- IST FAs -->
+                <div class="row text-center mt-4">
 
                     <div class="col-5 text-right">
                         Computer Science FA TUID: 
                     </div>
 
                     <div class="d-inline">
-                        <asp:TextBox placeholder="TUID" runat="server" />
+                        <asp:TextBox ID="txtIST" placeholder="TUID" runat="server" />
                     </div>
 
+                    <!-- Add Button -->
                     <div class="col text-left">
-                        <img src="images/PlusSquare.png" style="width: 30px" />
+                        <asp:ImageButton ID="btnISTAdd" runat="server" ImageUrl="images/PlusSquare.png" Text="" Width="30px" OnClick="btnISTAdd_Click" />
+                        <br />
                     </div>
                 </div>
+
+                <!-- IST FA Repeater -->
+                <asp:Repeater ID="rptIST" ItemType="System.string" runat="server">
+                    <ItemTemplate>
+
+                        <!-- Wrapper -->
+                        <div class="d-inline-flex justify-content-center offset-1 my-1">
+
+                            <!-- Input Group -->
+                            <div class="input-group">
+
+                                <!-- FA TUID -->
+                                <asp:TextBox Text="<%# Container.DataItem.ToString() %>" Width="65%" runat="server" Style="background-color: darkgray" ReadOnly="True" />
+
+                                <!-- Remove Button -->
+                                <div class="input-group-append">
+                                    <asp:ImageButton ID="btnISTMinus" runat="server" ImageUrl="images/MinusSquare.png" Text="" Width="30px"
+                                        CommandName="IST"
+                                        CommandArgument="<%# Container.DataItem.ToString() %>" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </ItemTemplate>
+                </asp:Repeater>
+                <!-- End Repeater -->
                 <!-- End CST -->
 
-                <!-- Eart Science FAs -->
-                <div class="row text-center m-3">
+                <!-- Earth Science FAs -->
+                <div class="row text-center mt-4">
 
                     <div class="col-5 text-right">
                         Earth/Environment FA TUID: 
                     </div>
 
                     <div class="d-inline">
-                        <asp:TextBox placeholder="TUID" runat="server" />
+                        <asp:TextBox ID="txtEarth" placeholder="TUID" runat="server" />
                     </div>
 
+                    <!-- Add Button -->
                     <div class="col text-left">
-                        <img src="images/PlusSquare.png" style="width: 30px" />
+                        <asp:ImageButton ID="btnEarthAdd" OnClick="btnEarthAdd_Click" runat="server" ImageUrl="images/PlusSquare.png" Text="" Width="30px" />
+                        <br />
                     </div>
-
                 </div>
+                <!-- Earth FA Repeater -->
+                <asp:Repeater ID="rptEarth" ItemType="System.string" runat="server">
+                    <ItemTemplate>
+
+                        <!-- Wrapper -->
+                        <div class="d-inline-flex justify-content-center offset-1 my-1">
+
+                            <!-- Input Group -->
+                            <div class="input-group">
+
+                                <!-- FA TUID -->
+                                <asp:TextBox Text="<%# Container.DataItem.ToString() %>" Width="65%" runat="server" Style="background-color: darkgray" ReadOnly="True" />
+
+
+                                <!-- Remove Button -->
+                                <div class="input-group-append">
+                                    <asp:ImageButton ID="btnEarthMinus" runat="server" ImageUrl="images/MinusSquare.png" Text="" Width="30px"
+                                        CommandName="Earth"
+                                        CommandArgument="<%# Container.DataItem.ToString() %>" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </ItemTemplate>
+                </asp:Repeater>
+                <!-- End Repeater -->
                 <!-- End Earth Sciences -->
 
                 <!-- Math FAs -->
-                <div class="row text-center m-3">
+                <div class="row text-center mt-4">
 
                     <div class="col-5 text-right">
                         Math FA TUID: 
                     </div>
 
                     <div class="d-inline">
-                        <asp:TextBox placeholder="TUID" runat="server" />
+                        <asp:TextBox ID="txtMath" placeholder="TUID" runat="server" />
                     </div>
 
+                    <!-- Add Button -->
                     <div class="col text-left">
-                        <img src="images/PlusSquare.png" style="width: 30px" />
+                        <asp:ImageButton ID="btnMathAdd" OnClick="btnMathAdd_Click" runat="server" ImageUrl="images/PlusSquare.png" Text="" Width="30px" />
+                        <br />
                     </div>
                 </div>
+
+                <!-- Math FA Repeater -->
+                <asp:Repeater ID="rptMath" ItemType="System.string" runat="server">
+                    <ItemTemplate>
+
+                        <!-- Wrapper -->
+                        <div class="d-inline-flex justify-content-center offset-1 my-1">
+
+                            <!-- Input Group -->
+                            <div class="input-group">
+
+                                <!-- FA TUID -->
+                                <asp:TextBox Text="<%# Container.DataItem.ToString() %>" Width="65%" runat="server" Style="background-color: darkgray" ReadOnly="True" />
+
+
+                                <!-- Remove Button -->
+                                <div class="input-group-append">
+                                    <asp:ImageButton ID="btnMathMinus" runat="server" ImageUrl="images/MinusSquare.png" Text="" Width="30px"
+                                        CommandName="Math"
+                                        CommandArgument="<%# Container.DataItem.ToString() %>" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </ItemTemplate>
+                </asp:Repeater>
                 <!-- End Math -->
 
                 <!-- Physics FAs -->
-                <div class="row text-center m-3">
+                <div class="row text-center mt-4">
 
                     <div class="col-5 text-right">
                         Physics FA TUID: 
                     </div>
 
                     <div class="d-inline">
-                        <asp:TextBox placeholder="TUID" runat="server" />
+                        <asp:TextBox ID="txtPhys" placeholder="TUID" runat="server" />
                     </div>
 
+                    <!-- Add Button -->
                     <div class="col text-left">
-                        <img src="images/PlusSquare.png" style="width: 30px" />
+                        <asp:ImageButton ID="btnPhysAdd" OnClick="btnPhysAdd_Click" runat="server" ImageUrl="images/PlusSquare.png" Text="" Width="30px" />
+                        <br />
                     </div>
-
                 </div>
-                <!-- End Physics -->
 
+                <!-- Phys FA Repeater -->
+                <asp:Repeater ID="rptPhys" ItemType="System.string" runat="server">
+                    <ItemTemplate>
+
+                        <!-- Wrapper -->
+                        <div class="d-inline-flex justify-content-center offset-1 my-1">
+
+                            <!-- Input Group -->
+                            <div class="input-group">
+
+                                <!-- FA TUID -->
+                                <asp:TextBox Text="<%# Container.DataItem.ToString() %>" Width="65%" runat="server" Style="background-color: darkgray" ReadOnly="True" />
+
+
+                                <!-- Remove Button -->
+                                <div class="input-group-append">
+                                    <asp:ImageButton ID="btnPhysMinus" runat="server" ImageUrl="images/MinusSquare.png" Text="" Width="30px"
+                                        CommandName="Phys"
+                                        CommandArgument="<%# Container.DataItem.ToString() %>" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </ItemTemplate>
+                </asp:Repeater>
+                <!-- End Physics -->
             </div>
             <!-- End FAs -->
 
@@ -187,4 +329,5 @@
         </div>
         <!-- End Page Container -->
 
+        </div>
 </asp:Content>

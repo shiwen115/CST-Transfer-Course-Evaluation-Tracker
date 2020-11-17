@@ -130,18 +130,17 @@
                 </nav>
             </div>
 
-
+            
             <div id="createTicket"> 
-                <h3 id="PageName">Sample Text</h3>                   
+                <h3 id="PageName"><asp:ContentPlaceHolder ID="Page_Name" runat="server">
+            </asp:ContentPlaceHolder></h3>                   
                 </div>
-        </div></div><br /><br />
+        </div>
+    </div>
+    <br /><br />
 
     <form id="form1" runat="server">
         <div>
-
-            <asp:ContentPlaceHolder ID="Page_Name" runat="server">
-            </asp:ContentPlaceHolder>
-
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
