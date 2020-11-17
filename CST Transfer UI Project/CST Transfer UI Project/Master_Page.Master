@@ -132,8 +132,8 @@
 
             
             <div id="createTicket"> 
-                <h3 id="PageName"><asp:ContentPlaceHolder ID="Page_Name" runat="server">
-            </asp:ContentPlaceHolder></h3>                   
+                <div id="PageName"><asp:ContentPlaceHolder ID="Page_Name" runat="server">
+            </asp:ContentPlaceHolder></div>                   
                 </div>
         </div>
     </div>

@@ -53,13 +53,28 @@ namespace CST_Transfer_UI_Project
             btnUploadSyllabus.Enabled = true;
             if (btnUploadSyllabus.Enabled == true)
             {
-                btnUploadSyllabus.BackColor = Color.DarkRed;
+                btnUploadSyllabus.BackColor = Color.Red;
             }
             else
             {
                 btnUploadSyllabus.BackColor = Color.Gray;
             }
 
+        }
+
+        protected void btnUploadSyllabus_Click(object sender, EventArgs e)
+        {
+            lblMessage.Text = "You Have Re-Uploaded Your Syllabus!";
+        }
+
+        protected void btnUploadedTranscript_Click(object sender, EventArgs e)
+        {
+            lblMessage.Text = "You Have Re-Uploaded Your Transcript!";
+        }
+
+        protected void btnUploadedDoc_Click(object sender, EventArgs e)
+        {
+            lblMessage.Text = "You Have Re-Uploaded Your Additional Documents!";
         }
     }
 }

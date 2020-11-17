@@ -68,9 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Create_Ticket.aspx" />
+    <Content Include="CSS\Faculty_Ticket_Details.css" />
     <Content Include="CSS\Student_Details.css" />
     <Content Include="CSS\Student_Overview.css" />
     <Content Include="Faculty_Overview.aspx" />
+    <Content Include="Faculty_Ticket_Details.aspx" />
     <Content Include="images\Complete.jpg" />
     <Content Include="images\Evaluating.jpg" />
     <Content Include="images\T.jpg" />
@@ -97,6 +99,13 @@
     </Compile>
     <Compile Include="Faculty_Overview.aspx.designer.cs">
       <DependentUpon>Faculty_Overview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_Ticket_Details.aspx.cs">
+      <DependentUpon>Faculty_Ticket_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty_Ticket_Details.aspx.designer.cs">
+      <DependentUpon>Faculty_Ticket_Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="FA_Ticket.cs" />
     <Compile Include="Login.aspx.cs">

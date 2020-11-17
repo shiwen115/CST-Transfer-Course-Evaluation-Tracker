@@ -10,16 +10,43 @@
 namespace CST_Transfer_UI_Project {
     
     
-    public partial class Student_Ticket_Details {
+    public partial class Faculty_Ticket_Details {
         
         /// <summary>
-        /// lblStatus1 control.
+        /// lblClaim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStatus1;
+        protected global::System.Web.UI.WebControls.Label lblClaim;
+        
+        /// <summary>
+        /// txtClaim control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtClaim;
+        
+        /// <summary>
+        /// btnClaimTicket control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnClaimTicket;
+        
+        /// <summary>
+        /// b control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label b;
         
         /// <summary>
         /// lblStatus2 control.
@@ -283,31 +310,31 @@ namespace CST_Transfer_UI_Project {
         protected global::System.Web.UI.WebControls.TextBox txtDateClosed;
         
         /// <summary>
-        /// btnUploadSyllabus control.
+        /// btnDownloadSyllabus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUploadSyllabus;
+        protected global::System.Web.UI.WebControls.Button btnDownloadSyllabus;
         
         /// <summary>
-        /// btnUploadedTranscript control.
+        /// btnDownloadTranscript control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUploadedTranscript;
+        protected global::System.Web.UI.WebControls.Button btnDownloadTranscript;
         
         /// <summary>
-        /// btnUploadedDoc control.
+        /// btnDownloadDocs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUploadedDoc;
+        protected global::System.Web.UI.WebControls.Button btnDownloadDocs;
         
         /// <summary>
         /// txtAdvisorNote control.

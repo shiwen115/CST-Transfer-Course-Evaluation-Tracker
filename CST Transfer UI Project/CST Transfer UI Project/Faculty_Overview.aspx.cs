@@ -76,9 +76,11 @@ namespace CST_Transfer_UI_Project
             t5.Department = "Physics";
             array.Add(t5);
 
-
-            gvStudentTickets.DataSource = array;
-            gvStudentTickets.DataBind();
+            if (!(IsPostBack))
+            {
+                gvStudentTickets.DataSource = array;
+                gvStudentTickets.DataBind();
+            }     
         }
 
         protected void Status_Changed(object sender, EventArgs e)
@@ -157,7 +159,7 @@ namespace CST_Transfer_UI_Project
 
         protected void btnView_Clicked(object sender, EventArgs e)
         {
-            //Server.Transfer("Student_Ticket_Details.aspx");
+            Server.Transfer("Faculty_Ticket_Details.aspx");
         }
     }
 }

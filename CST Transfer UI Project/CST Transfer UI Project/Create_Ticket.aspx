@@ -6,7 +6,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Page_Name" runat="server">
-Create Ticket
+<h3>Create Ticket</h3>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

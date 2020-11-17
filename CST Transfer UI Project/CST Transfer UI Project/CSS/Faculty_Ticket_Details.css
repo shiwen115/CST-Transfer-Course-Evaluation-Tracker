@@ -1,4 +1,20 @@
-﻿.FormHeader {
+﻿#PageName {
+    display: flex;
+    width: 100%;
+}
+
+.ClaimDisplay {
+    display: flex;
+    align-content: flex-end;
+    text-align: end;
+    margin: auto;
+}
+
+    .ClaimDisplay input {
+        background: #d3d3d3;
+    }
+
+.FormHeader {
     border-bottom: 1px solid black;
     width: 100%;
     margin-bottom: 3%;
@@ -50,8 +66,7 @@ input {
 }
 
 .MarginLabel div {
-    margin-top: 6%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 
 .MarginInput div {
@@ -70,8 +85,6 @@ input {
 
 
 .btnUpload input {
-    background-color: #ADADAD;
-    color: white;
     padding-right: 10%;
     padding-left: 10%;
 }
@@ -113,6 +126,10 @@ input {
     }
 
 .btnEdit input {
+    width: 100%;
+}
+
+.btnEdit2 input {
     background-color: #9E1C35;
     color: white;
     width: 100%;
