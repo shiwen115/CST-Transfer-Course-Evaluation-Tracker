@@ -154,5 +154,10 @@ namespace CST_Transfer_UI_Project
                 gvStudentTickets.DataBind();
             }
         }
+
+        protected void btnView_Clicked(object sender, EventArgs e)
+        {
+            //Server.Transfer("Student_Ticket_Details.aspx");
+        }
     }
 }

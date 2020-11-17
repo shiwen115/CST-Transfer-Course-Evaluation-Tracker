@@ -58,7 +58,7 @@ Ticket Overview
                 <asp:BoundField DataField="Department" HeaderText="Department" />
                 <asp:TemplateField HeaderText="View">
                     <ItemTemplate>
-                        <asp:Button ID="btnView" runat="server" Text="View" />
+                        <asp:Button ID="btnView" onclick="btnView_Clicked" runat="server" Text="View" />
                     </ItemTemplate>
                     <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                 </asp:TemplateField>
