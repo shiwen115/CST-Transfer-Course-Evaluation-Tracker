@@ -5,7 +5,9 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Page_Name" runat="server">
-    <h3>Ticket Overview</h3>
+    <h3>Ticket Overview
+        <p style="float: right; font-size:medium">John Doe</p>
+        </h3>
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

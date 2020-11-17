@@ -3,7 +3,9 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Page_Name" runat="server">
-    <h3>Ticket Details</h3>
+    <h3>Ticket Details
+        <p style="float: right; font-size:medium">Joel Sheffield</p>
+    </h3>
     <div class="ClaimDisplay">
         <div class="mr-1"><asp:Label ID="lblClaim" runat="server" Text="FA:"></asp:Label> </div>
         <div>
