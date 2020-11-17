@@ -36,9 +36,11 @@ namespace CST_Transfer_UI_Project
             t2.Department = "Chemistry";
             array.Add(t2);
 
-
-            gvStudentTickets.DataSource = array;
-            gvStudentTickets.DataBind();
+            if (!(IsPostBack))
+            {
+                gvStudentTickets.DataSource = array;
+                gvStudentTickets.DataBind();
+            }
         }
 
         protected void Status_Changed(object sender, EventArgs e)
@@ -63,6 +65,11 @@ namespace CST_Transfer_UI_Project
                 gvStudentTickets.DataSource = array;
                 gvStudentTickets.DataBind();
             } 
+        }
+
+        protected void btnView_Clicked(object sender, EventArgs e)
+        {
+            Server.Transfer("Student_Ticket_Details.aspx");
         }
     }
 }
