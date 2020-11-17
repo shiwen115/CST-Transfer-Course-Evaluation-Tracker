@@ -111,16 +111,19 @@
                     <div class="collapse navbar-collapse text-white pl-5" id="navbarNav" >
                         <ul class="navbar-nav text-white pl-5">
                             <li class="nav-item active text-white pl-5">
-                                <a class="nav-link text-white" href="#">Tickets <span class="sr-only">(current)</span></a>
+                                <a class="nav-link text-white" href="Student_Overview.aspx">Ticket (Student View) <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active text-white pl-5">
+                                <a class="nav-link text-white" href="Faculty_Overview.aspx">Ticket (Faculty View) <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item text-white pl-4">
-                                <a class="nav-link text-white" href="#">Create Ticket</a>
+                                <a class="nav-link text-white" href="Create_Ticket.aspx">Create Ticket</a>
                             </li>
                             <li class="nav-item text-white pl-4">
-                                <a class="nav-link text-white" href="#">Rules</a>
+                                <a class="nav-link text-white" href="Rules.aspx">Rules</a>
                             </li>
                             <li class="nav-item text-white pl-4">
-                                <a class="nav-link text-white " href="#">Equivalency Tool</a>
+                                <a class="nav-link text-white " href="https://tuportal5.temple.edu/apps/tup/Public/TransferRules/">Equivalency Tool</a>
                             </li>
                         </ul>
                     </div>

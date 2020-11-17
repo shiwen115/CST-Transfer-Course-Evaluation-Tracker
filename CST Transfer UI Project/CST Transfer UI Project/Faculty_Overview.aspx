@@ -6,12 +6,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div id="header" style="margin-top:-8px;">
-        <div class="alert" role="alert">
-             Ticket Dashboard
-        </div>
-    </div>
-
     <div id="mainContent">
 
         <!--Drop Down Status-->
