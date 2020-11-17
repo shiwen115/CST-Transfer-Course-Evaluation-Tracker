@@ -14,59 +14,124 @@
     </asp:ContentPlaceHolder>
 
         <style>
-            .container {
+
+        p{
+            text-align: left;
+            font-family: Roboto;
+            font-weight: bold;
+            border-radius: 8px;
+            border-radius: 10px;
+        }
+        h2{
+            text-align:center;
+            font-weight: bold;
+            font-family: Roboto;
+            font-size: 36px;
+        }
+        .container{
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #createTicket{
+            background-color: #F1E7E7;
+            height: 75px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            text-align: left;
+            color: black;
+            font-size: 20px;
+            padding-left:140px;
+            padding-top:10px;
+
+            
+        }
+        h3{
+            margin-left: 60px;
+            padding: 14px;
+            font-weight: bold;
+            font-family: Merriweather;
+            font-size: 22px;
+            
+        }
+     
+        #black{
             background-color: black;
-            }
-           
-</style>
+        }
+        
+        #image{
+            text-align:right;
+        }
+       
+        hr{
+           background-color:white;
+        }
+        h1{
+            font-family: Merriweather;
+            font-size: 35px;
+        }
+        #college{
+            font-size: 10px;
+            font-weight: normal;
+            font-family: Merriweather;
+        }
+        #signOut{
+        font-weight: normal;
+        text-align: right;
+        padding-right:40px;
+        font-size: 15px;
+        }
+</style>     
 
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-
-            <div class="col-xs-1">
-                <img src="..." class="rounded float-left" alt="...">
+    <div id="black"> 
+        <div class="row pl-5 pt-4">
+            <div class="col-2 ">  
+                <p id="image" > 
+                <asp:Image ID="imgTemple"  ImageUrl="~/Images/T.jpg"  Height="120px" runat="server" />
+                </p>
             </div>
             <div class="col text-left text-white">
-                <p>College of Science & Technology</p>
-                <h1>E-COURSE TRANSFER DASHBOARD</h1>
+                <p id="signOut">Sign Out</p>
+                <hr />
+                <p id="college">College of Science & Technology</p>
+                <h1>E-Course Transfer Dashboard</h1>
             </div>
         </div>
-
-        <div class="row-lg-1 text-white">
-            <div class="col text-white">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
+        <div class="row-lg-1 pt-1">
+            <div class="col pl-5 pb-3">
+                
+                <nav class="navbar navbar-expand-lg navbar-dark pl-5">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse text-white" id="navbarNav" >
-                        <ul class="navbar-nav">
-                            <li class="nav-item active text-white">
-                                <a class="nav-link" href="#">Tickets <span class="sr-only">(current)</span></a>
+                    <div class="collapse navbar-collapse text-white pl-5" id="navbarNav" >
+                        <ul class="navbar-nav text-white pl-5">
+                            <li class="nav-item active text-white pl-5">
+                                <a class="nav-link text-white" href="#">Tickets <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Create Ticket</a>
+                            <li class="nav-item text-white pl-4">
+                                <a class="nav-link text-white" href="#">Create Ticket</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Rules</a>
+                            <li class="nav-item text-white pl-4">
+                                <a class="nav-link text-white" href="#">Rules</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Equivalency Tool</a>
+                            <li class="nav-item text-white pl-4">
+                                <a class="nav-link text-white " href="#">Equivalency Tool</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
-            <div class="col text-black-50">
-                <h2>TICKET DASHBOARD</h2>
-            </div>
-            <div class="col">
-            </div>
-        </div>
-    </div>
 
+
+            <div id="createTicket"> 
+                <h3 id="PageName">Sample Text</h3>                   
+                </div>
+        </div></div><br /><br />
 
     <form id="form1" runat="server">
         <div>

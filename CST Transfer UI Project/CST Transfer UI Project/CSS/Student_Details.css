@@ -1,0 +1,107 @@
+﻿img {
+    display: inherit;
+    max-width: 20px;
+}
+
+
+body {
+    font-size: 12px;
+}
+
+.Title {
+    font-size: 22px;
+}
+
+.StatusLine {
+    display: flex;
+}
+
+    .StatusLine div {
+        margin: 0% 5% 5% 5%;
+    }
+
+
+.StatusDivider {
+    width: 5%;
+    height: 20%;
+    border: 1px solid black;
+    margin-left: 9px;
+    margin-bottom: 10px;
+}
+
+
+.FormLabel {
+    display: block;
+    justify-content: flex-start;
+}
+
+.FormInput {
+    background-color: lightgray;
+}
+
+input {
+    border-radius: 3%;
+}
+
+.MarginLabel div {
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+.MarginInput div {
+    margin-bottom: 3%;
+}
+
+.NoteInput input {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 300%;
+}
+
+.btnEdit input {
+    background-color: #9E1C35;
+    color: white;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.btnUpload input {
+    background-color: #ADADAD;
+    color: white;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.btnUpload2 input {
+    background-color: #9E1C35;
+    color: white;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+.RowBottomMargin {
+    margin-bottom: 0px;
+}
+
+.RowTopMargin {
+    margin-top: 0px;
+}
+
+.EvalBox {
+    background-color: lightgray;
+    margin-top: 50%;
+    padding-bottom: 10%;
+    border-radius: 2%;
+    border: 1px solid black;
+}
+
+    .EvalBox input {
+        width: 90%;
+    }
+
+    .EvalBox h3 {
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: bold;
+    }
