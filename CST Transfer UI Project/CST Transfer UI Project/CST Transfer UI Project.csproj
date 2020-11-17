@@ -72,7 +72,12 @@
     <Content Include="CSS\Student_Overview.css" />
     <Content Include="Faculty_Overview.aspx" />
     <Content Include="HomePage.aspx" />
+    <Content Include="images\Complete.jpg" />
+    <Content Include="images\Evaluating.jpg" />
     <Content Include="images\T.jpg" />
+    <Content Include="images\Temple_Icon.png" />
+    <Content Include="images\Unclaimed.png" />
+    <Content Include="images\Uploading.png" />
     <Content Include="Rules.aspx" />
     <Content Include="Student_Overview.aspx" />
     <Content Include="Student_Ticket_Details.aspx" />
