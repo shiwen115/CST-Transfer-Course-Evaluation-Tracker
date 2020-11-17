@@ -138,6 +138,10 @@
 
     <form id="form1" runat="server">
         <div>
+
+            <asp:ContentPlaceHolder ID="Page_Name" runat="server">
+            </asp:ContentPlaceHolder>
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
