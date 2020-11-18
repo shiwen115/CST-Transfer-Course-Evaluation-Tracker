@@ -46,9 +46,9 @@ namespace CST_Transfer_UI_Project
                 Departments[5] = (Phys);
 
                 //Default Values
-                Departments[0].Add("1239876542");
-                Departments[1].Add("9153214780");
-                Departments[1].Add("3594523554");
+                Departments[0].Add("Joel Sheffield");
+                Departments[1].Add("Mike Zdilla");
+                //Departments[1].Add("3594523554");
 
                 //Save new List to Session;
                 Session["List"] = Departments;

@@ -7,7 +7,7 @@
         <p style="float: right; font-size:medium">Joel Sheffield</p>
     </h3>
     <div class="ClaimDisplay">
-        <div class="mr-1"><asp:Label ID="lblClaim" runat="server" Text="FA:"></asp:Label> </div>
+        <div class="mr-1"><asp:Label ID="lblClaim" runat="server" Text="Faculty Advisor:"></asp:Label> </div>
         <div>
             <input class="text-center" type="text" id="txtClaim" name="txtClaim" value="Unclaimed" runat="server"/>
         </div>
