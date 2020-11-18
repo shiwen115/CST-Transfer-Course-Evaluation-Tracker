@@ -21,7 +21,7 @@ namespace CST_Transfer_UI_Project
             t1.Status = "Complete";
             t1.DateCreated = "20-08-2020";
             t1.TUID = 915386450;
-            t1.FA = "Tina Smith";
+            t1.FA = "Joel Sheffield";
             t1.TransferCourse = "BIO-630";
             t1.StudentName = "John Doe";
             t1.TransferUniversity = "Penn State University";
@@ -33,7 +33,7 @@ namespace CST_Transfer_UI_Project
             t2.Status = "Evaluating";
             t2.DateCreated = "09-01-2019";
             t2.TUID = 918469241;
-            t2.FA = "John Legened";
+            t2.FA = "Sally Kyvernitis";
             t2.TransferCourse = "CIS3314";
             t2.StudentName = "Bill Smith";
             t2.TransferUniversity = "Ohio State";
@@ -45,7 +45,7 @@ namespace CST_Transfer_UI_Project
             t3.Status = "Uploading";
             t3.DateCreated = "10-05-2020";
             t3.TUID = 915386450;
-            t3.FA = "Tina Smith";
+            t3.FA = "Michael J. Zdilla";
             t3.TransferCourse = "CHEM-204";
             t3.StudentName = "John Doe";
             t3.TransferUniversity = "Penn State University";
@@ -69,7 +69,7 @@ namespace CST_Transfer_UI_Project
             t5.Status = "Complete";
             t5.DateCreated = "08-21-2020";
             t5.TUID = 916237951;
-            t5.FA = "Sally Johnson";
+            t5.FA = "Maria Lavarone";
             t5.TransferCourse = "PHYS-119";
             t5.StudentName = "Rick Sanchez";
             t5.TransferUniversity = "Ursinus";
