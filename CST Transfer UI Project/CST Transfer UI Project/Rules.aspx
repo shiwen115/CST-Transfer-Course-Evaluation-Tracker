@@ -19,7 +19,7 @@
 
             <!-- Container Header -->
             <div class="col-xs-12 border border-dark h3 m-0">
-                Set Rules
+                Rules
             </div>
 
             <!-- Grace Period -->
@@ -40,7 +40,7 @@
 
             <!-- FA Header -->
             <div class="col-xs-12 text-center h3">
-                Associate Faculty Advisors     
+                Faculty Advisors     
             </div>
 
 

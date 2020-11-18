@@ -28,13 +28,14 @@
         <!--Gridview-->
         <asp:GridView ID="gvStudentTickets" runat="server" AutoGenerateColumns="False" style="margin-left: auto; margin-right: auto; margin-top:5em;" CellPadding="15">
             <Columns>
-                <asp:BoundField DataField="Status" HeaderText="Status" />
-                <asp:BoundField DataField="DateCreated" HeaderText="Date Created" />
-                <asp:BoundField DataField="TicketID" HeaderText="Ticket ID" />
-                <asp:BoundField DataField="TransferCourse" HeaderText="Transfer Course" />
-                <asp:BoundField DataField="StudentName" HeaderText="Student Name" />
-                <asp:BoundField DataField="TransferUniversity" HeaderText="Transfer University" />
-                <asp:BoundField DataField="Department" HeaderText="Department" />
+                <asp:BoundField DataField="Status" HeaderText="Status ^" />
+                <asp:BoundField DataField="DateCreated" HeaderText="Date Created ^" DataFormatString="{0:d}" />
+                <asp:BoundField DataField="TicketID" HeaderText="Ticket ID ^" />
+                <asp:BoundField DataField="TransferCourse" HeaderText="Transfer Course ^" />
+                <asp:BoundField DataField="StudentFirst" HeaderText="First Name ^" />
+                <asp:BoundField DataField="StudentLast" HeaderText="Last Name ^" />
+                <asp:BoundField DataField="TransferUniversity" HeaderText="Transfer University ^" />
+                <asp:BoundField DataField="Department" HeaderText="Department ^" />
                 <asp:TemplateField HeaderText="View">
                     <ItemTemplate>
                         <asp:Button ID="btnView" onclick="btnView_Clicked" runat="server" Text="View" />
@@ -49,8 +50,8 @@
 
 
 
-
     <!--
+    
     <div class="container">
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
