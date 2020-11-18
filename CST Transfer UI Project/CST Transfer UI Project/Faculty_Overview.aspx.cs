@@ -45,11 +45,7 @@ namespace CST_Transfer_UI_Project
             t3.Status = "Uploading";
             t3.DateCreated = "10-05-2020";
             t3.TUID = 915386450;
-<<<<<<< Updated upstream
-            t3.FA = "Michael J. Zdilla";
-=======
             t3.FA = "Mike Zdilla";
->>>>>>> Stashed changes
             t3.TransferCourse = "CHEM-204";
             t3.StudentName = "John Doe";
             t3.TransferUniversity = "Penn State University";
