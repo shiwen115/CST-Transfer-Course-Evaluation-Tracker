@@ -8,6 +8,35 @@
     font-size: 22px;
 }
 
+.DisplayBG {
+    background-color: #C4C4C4;
+}
+
+.DBorder1{
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.DBorder2 {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.DisplayLine{
+    display:flex;
+}
+
+.DInputPair{
+    margin: 1% 1% 1% 1%;
+}
+
+.EInputPair {
+    display:flex;
+    margin: 1% 1% 1% 1%;
+}
+
 .StatusLine {
     display: flex;
 }
@@ -47,6 +76,7 @@
 
 input {
     border-radius: 3%;
+    text-align:center;
 }
 
 .MarginLabel div {
@@ -63,9 +93,10 @@ input {
 }
 
 .NoteInput input {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: 150%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 200%;
+    margin-left:15px;
 }
 
 
@@ -98,7 +129,6 @@ input {
     padding-bottom: 10%;
     border-radius: 2%;
     border: 1px solid black;
-    max-width: 90%;
 }
 
     .EvalBox input {
