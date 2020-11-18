@@ -6,7 +6,9 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Page_Name" runat="server">
-<h3>Ticket Overview</h3>
+<h3>Ticket Overview
+    <p> style="float: right; font-size:medium">Joel Sheffield</p>
+</h3>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -26,10 +28,7 @@
 
 
         <!--Search Box-->
-        <asp:Label ID="lblSearch" runat="server" Text="Search TUID" style="margin-left:40em;"></asp:Label>
-        <asp:TextBox id="txtSearch" runat="server" type="text"></asp:TextBox>
-        <asp:Button ID="btnSearch" class="button" runat="server" Text="Search" onclick="btnSearch_Clicked"/> 
-        <br />
+
 
         <!--Drop Down Departments-->
         <asp:Label ID="lblFilterDep" runat="server" Text="Filter Department" style="margin-left: 65%;"></asp:Label>
@@ -43,6 +42,9 @@
                   <asp:ListItem Value="Math"> Math </asp:ListItem>
                   <asp:ListItem Value="Physics"> Physics </asp:ListItem>
         </asp:DropDownList>
+
+
+
 
         <!--Gridview-->
         <asp:GridView ID="gvStudentTickets" runat="server" AutoGenerateColumns="False" style="margin-left: auto; margin-right: auto; margin-top:5em;" CellPadding="15">
