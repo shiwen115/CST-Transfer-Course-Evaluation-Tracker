@@ -6,7 +6,9 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Page_Name" runat="server">
-<h3>Rules</h3>
+<h3>Rules
+    <p style="float: right; font-size:medium">Sarah Henofer</p>
+</h3>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -17,7 +19,7 @@
 
             <!-- Container Header -->
             <div class="col-xs-12 border border-dark h3 m-0">
-                Set Rules
+                Rules
             </div>
 
             <!-- Grace Period -->
@@ -38,7 +40,7 @@
 
             <!-- FA Header -->
             <div class="col-xs-12 text-center h3">
-                Associate Faculty Advisors     
+                Faculty Advisors     
             </div>
 
 
