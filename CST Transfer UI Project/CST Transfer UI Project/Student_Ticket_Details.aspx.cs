@@ -22,7 +22,9 @@ namespace CST_Transfer_UI_Project
                 btnEdit.Text = "SUBMIT";
 
                 txtLinktoCD.Enabled = true;
-                btnUploadSyllabus.Enabled = true;
+
+                lblCourseSyllabus.Visible = true;
+                btnUploadSyllabus.Visible = true;
 
                 lblCourseTranscript.Visible = true;
                 lblAdditionalDoc.Visible = true;
@@ -37,7 +39,9 @@ namespace CST_Transfer_UI_Project
                 btnEdit.Text = "EDIT";
 
                 txtLinktoCD.Enabled = false;
-                btnUploadSyllabus.Enabled = false;
+
+                btnUploadSyllabus.Visible = false;
+                btnUploadSyllabus.Visible = false;
 
                 lblCourseTranscript.Visible = false;
                 lblAdditionalDoc.Visible = false;
@@ -46,19 +50,11 @@ namespace CST_Transfer_UI_Project
                 btnUploadedDoc.Visible = false;
 
                 lblMessage.Text = "You Have Submited Changes!";
+
+                txtCurrentStatus.Text = "Unclaimed";
             }
 
-
-
-            btnUploadSyllabus.Enabled = true;
-            if (btnUploadSyllabus.Enabled == true)
-            {
-                btnUploadSyllabus.BackColor = Color.Red;
-            }
-            else
-            {
-                btnUploadSyllabus.BackColor = Color.Gray;
-            }
+            
 
         }
 
