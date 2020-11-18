@@ -19,9 +19,10 @@ namespace CST_Transfer_UI_Project
             StudentTicket t1 = new StudentTicket();
             t1.TicketID = 12356;
             t1.Status = "Complete";
-            t1.DateCreated = "20-08-2020";
+            t1.DateCreated = "08/20/2020";
             t1.TransferCourse = "BIO-630";
-            t1.StudentName = "John Doe";
+            t1.StudentFirst = "John";
+            t1.StudentLast = "Doe";
             t1.TransferUniversity = "Penn State University";
             t1.Department = "Biology";
             array.Add(t1);
@@ -29,9 +30,10 @@ namespace CST_Transfer_UI_Project
             StudentTicket t2 = new StudentTicket();
             t2.TicketID = 654321;
             t2.Status = "Uploading";
-            t2.DateCreated = "10-05-2020";
+            t2.DateCreated = "05/10/2020";
             t2.TransferCourse = "CHEM-204";
-            t2.StudentName = "John Doe";
+            t2.StudentFirst = "John";
+            t2.StudentLast = "Doe";
             t2.TransferUniversity = "Penn State University";
             t2.Department = "Chemistry";
             array.Add(t2);
